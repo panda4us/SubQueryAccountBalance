@@ -14,6 +14,7 @@ export async function handleEvent(event: SubstrateEvent): Promise<void> {
     record.account = account.toString();
     //Big integer type Balance of a transfer event
     record.balance = (balance as Balance).toBigInt();
+    record.total_balance+=record.balance
     await record.save();
 }
 
