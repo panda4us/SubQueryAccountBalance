@@ -7,7 +7,7 @@ type Account @entity {
 
   balance: BigInt
 
-  total_balance:BigInt
+  total_balance: BigInt
 
 
 
